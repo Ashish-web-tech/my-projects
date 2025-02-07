@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/projects.css">
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+</head>
+
+<body>
+    <div id="home-container">
+        <div class="home-header">
+            <!-- <img src="img/bars-solid.svg" alt=""> -->
+            <ul>
+                <li><a href="#home-container" id="home">Home</a></li>
+                <li><a href="#about-container" id="about">About</a></li>
+                <li><a href="#skills-container" id="skills">Skills</a></li>
+                <li><a href="#projects-container" id="projects">Projects</a></li>
+                <li><a target="_blank" href="https://drive.google.com/file/d/1OvVbB1zFSoZwVIhQFrRTv4cW9s7OF4_c/view?usp=drivesdk" id="resume">Resume</a></li>
+            </ul>
+        </div>
+
+        <div class="home-section-one">
+            <div class="name-titles">
+                <h1 class="ashish"></h1>
+                <!-- <p>Full Stack Developer</p> -->
+                <span id="element"></span>
+            </div>
+        </div>
+        <div class="home-section-two">
+            <img src="img/my.jpg" alt="">
+            <div class="left-section-two">
+                <div class="lines">
+                    <p>FrontEnd / BackEnd / Mern Technologies</p>
+                    <p id="sec-line">Freelancer</p>
+                </div>
+                <a href="https://t.me/+S8lJggfr9fFlYjM1" target="_blank">Get In Touch</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="about-container">
+        <div class="about-section-one">
+            <h1 class="about-me">About </h1>
+            <h1 class="me">Me</h1>
+        </div>
+        <div class="about-section-two">
+            <p class="about-para">
+                Passionate and results-driven Full-Stack Developer student designing, developing, and deploying
+                scalable web applications. Proficient in both front-end and back-end technologies, including [list
+                key technologies, e.g., React, Node.js, JavaScript, Python, etc.], with a strong understanding of
+                database management and cloud solutions.
+            </p>
+            <p class="about-para">
+                Adept at solving complex problems, optimizing application performance, and collaborating with
+                cross-functional teams to deliver high-quality software solutions. Committed to continuous learning
+                and staying updated with the latest industry trends and best practices.
+            </p>
+            <p class="last about-para">
+                Seeking opportunities to leverage my expertise in full-stack development to build innovative and
+                efficient digital solutions.
+            </p>
+        </div>
+    </div>
+
+
+    <div id="skills-container">
+        <div class="skills-section-one">
+            <h1>Skills</h1>
+            <h3>I love to learn new things and experiment with new technologies.</h3>
+            <h3>These are some of the major languages, technologies, tools and platforms I have worked with:</h3>
+        </div>
+        <div class="skills-section-two">
+            <div class="skill-list">
+                <h2 class="languages">Languages & Databases</h2>
+                <div class="img-lang">
+                    <span class="js">
+                        <img src="img/js.png" alt="">
+                        <p>JavaScript</p>
+                    </span>
+                    <span class="sql">
+                        <img src="img/mysql.png" alt="">
+                        <p>My Sql</p>
+                    </span>
+                    <span class="python">
+                        <img src="img/python.png" alt="">
+                        <p>Python</p>
+                    </span>
+                </div>
+            </div>
+            <div class="skill-list">
+                <h2 class="framework">Frameworks</h2>
+                <div class="img-lang">
+                    <span class="js">
+                        <img src="img/react.png" alt="">
+                        <p>React Js</p>
+                    </span>
+                    <span class="sql">
+                        <img src="img/node.png" alt="">
+                        <p>Node Js</p>
+                    </span>
+                </div>
+            </div>
+            <div class="skill-list">
+                <h2 class="tools">Tools & Platform</h2>
+                <div class="img-lang">
+                    <span class="js">
+                        <img src="img/heroku.png" alt="">
+                        <p>Heroku</p>
+                    </span>
+                    <span class="sql">
+                        <img src="img/git.png" alt="">
+                        <p>Git</p>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="projects-container">
+        <div class="projects-section-one">
+            <h1>My Projects</h1>
+        </div>
+        <div class="projects-section-two">
+                <div class="project-list">
+                    <img src="img/projects.png" alt="">
+                    <p>Business Application</p>
+                </div>
+                <div class="project-list">
+                    <img src="img/projects.png" alt="">
+                    <p>Chat Application</p>
+                </div>
+                <div class="project-list">
+                    <img src="img/projects.png" alt="">
+                    <p>Banking Application</p>
+                </div>
+
+        </div>
+    </div>
+
+
+
+
+</body>
+<script>
+    let typed = new Typed('#element', {
+        strings: ['Web Developer', 'Freelancer', 'Web Designer'],
+        typeSpeed: 50, loop: true, showCursor: false,
+    });
+    let myName = new Typed('.ashish', {
+        strings: ['Ashish Mishra'],
+        typeSpeed: 50, loop: false, showCursor: false,
+    });
+
+
+    let languages = new Typed('.languages', {
+        strings: ['Languages &amp; Databases'],
+        typeSpeed: 50, loop: false, showCursor: false, fadeOut: true,
+    });
+    let framework = new Typed('.framework', {
+        strings: ['Frameworks'],
+        typeSpeed: 50, loop: false, showCursor: false, fadeOut: true,
+    });
+    let tools = new Typed('.tools', {
+        strings: ['Tools &amp; Platform'],
+        typeSpeed: 50, loop: false, showCursor: false, fadeOut: true,
+    });
+
+</script>
+
+</html>

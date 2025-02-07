@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: "Ubuntu", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(18, 18, 18);
+    color: #ddd;
+    overflow: hidden;
+}
+
+#home-container{
+    height: 100vh;
+}
+
+/* home header css page */
+
+.home-header{
+    /* border: 1px solid white; */
+    padding: 25px;
+    position: fixed;
+    right: 0;
+}
+
+.home-header img{
+    display: none;
+}
+
+.home-header ul{
+    display: flex;
+}
+.home-header ul a{
+    color: white;
+    margin: 10px;
+}
+
+.home-header ul li a:hover{
+    color: white;
+    font-weight: bold;
+}
+
+/* home section css */
+
+.home-section-one{
+    padding: 30px ;
+}
+.name-titles{
+    width: 100%;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+}
+
+.name-titles h1{
+    font-size: 10vw;
+}
+.name-titles span{
+    font-size: 2vw;
+}
+
+/* home section two css page */
+
+.home-section-two{
+    display: flex;
+    padding: 10px 0px 0px 30px;
+}
+
+.home-section-two img{
+    width: 46vw;
+    margin-right: 60px;
+}
+
+.left-section-two{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+
+.left-section-two p{
+    margin-bottom: 10px;
+    font-size: 1.5vw;
+}
+.left-section-two a{
+    color: #ddd;
+    font-size: 1.2vw;
+    text-decoration: underline;
+}
+
+.left-section-two a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 769px) {
+
+
+    .name-titles{
+        height: 195px;
+        justify-content: center;
+        /* align-items: center; */
+    }
+
+    .home-header img{
+        display: block;
+        width: 20px;
+    }
+
+    .lines p{
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 426px) {
+
+    .home-header{
+        width: 100%;
+        padding: 0;
+        height: 90px;
+    }
+
+    .home-header ul{
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        margin: 0;
+
+    }
+    .home-header ul li a{
+        color: #ddd
+    }
+
+    .name-titles{
+        height: 225px;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .name-titles h1{
+        font-size: 13vw;
+    }
+
+    .name-titles span{
+        font-size: 5vw;
+        height: 20px;
+    }
+    .home-section-two{
+        flex-direction: column;
+        justify-content: center;
+        /* border: 1px solid white; */
+        align-items: center;
+        padding: 0;
+    
+    }
+    .home-section-two img{
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 77vw;
+    
+    }
+    
+    .left-section-two p{
+        font-size:4vw;
+    }
+
+    .left-section-two a{
+        font-size: 3vw;
+    }
+
+
+    #sec-line{
+        margin-bottom: 60px;
+    }
+    
+    .left-section-two{
+        align-items: center;
+    }
+}
+
